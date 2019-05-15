@@ -24,4 +24,9 @@ public class UserAcc {
 	private boolean active;
 	@DBRef 
 	private List<Shop> preferredShops = new ArrayList<>();
+	@Override
+	public String toString() {
+		return "User {id=" + id + ", email=" + email + ", password="
+				+ password + "}";
+	}
 }
